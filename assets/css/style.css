@@ -47,7 +47,7 @@ main {
     margin: 15px 0px;
 
     p{
-        margin-left: 20px;
+        margin-left: 16px;
         
         
     }
@@ -58,12 +58,22 @@ main {
     flex-direction: column;
     margin-top: 25px;
 
-    label{
+    label {
         display: block;
         font-size: 12px;
         font-weight: bold;
         
         
+    }
+
+    .paragrafo {
+        display: none;
+        position: relative;
+        top: -13px;
+        left: 270px;
+        font-size: 12px;
+        font-weight: bold;
+        color: rgb(240, 71, 71);
     }
 
     input {
@@ -87,7 +97,16 @@ input.button {
     font-weight: 500;
     border: none;
     font-family: 'Roboto';
+    cursor: pointer;
 }
+
+input.button:hover {
+    background-image: linear-gradient(35deg , rgba(245, 48, 41, 0.966) , rgba(255, 93, 29, 0.973));
+    box-shadow:  0 2px 20px rgb(253, 97, 92) ;
+    transition: all 0.2s;
+   
+}
+
 .leftside img {
     
     height: 470px;
