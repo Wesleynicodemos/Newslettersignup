@@ -20,9 +20,11 @@ input.addEventListener('click', (e)=>{
     (dominio.search(".")!=-1) &&
     (dominio.indexOf(".") >=1)&&
     (dominio.lastIndexOf(".") < dominio.length - 1))   {
+        localStorage.setItem('text', email)
         paragrafo.style.display = 'none'
         email2.style.borderColor = '#AEAEAE'
-        email2.style.background = 'white'   
+        email2.style.background = 'white' 
+        window.location.assign("/confirmation.html")  
     } else {
         
         email2.style.borderColor = "red"
@@ -30,4 +32,15 @@ input.addEventListener('click', (e)=>{
         paragrafo.style.display = "block"
 }
 })
+
+//  SCRIPT CONFIMATION PAGE
+function userEmail(){
+ 
+    let spanConfirmation = document.querySelector('.span-confirmation')
+    spanConfirmation.textContent = `${localStorage.getItem('text')}.`
+    spanConfirmation.style.fontWeight = 'bolder'
+}
+
+window.addEventListener('load', userEmail())
+
 
