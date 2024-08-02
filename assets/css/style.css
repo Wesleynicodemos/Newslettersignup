@@ -29,7 +29,7 @@ main {
 .rightside {
     display: flex;
     flex-direction: column;
-    width: 395px;
+    width: 398px;
     height: 390px;
     margin: auto;
  
@@ -43,12 +43,12 @@ main {
 }
 
 .info1, .info2, .info3 {
-    width: 400px;
+    width: 380px;
     display: flex;
     margin: 15px 0px;
 
     p{
-        margin-left: 16px;
+        margin-left: 13px;
         
         
     }
@@ -119,10 +119,10 @@ input.button:hover {
 
 /* MOBILE */
 
-@media screen and (max-width : 480px ) {
+@media  (max-width : 480px ) {
 
     body {
-        background-color: white;    
+        background-color: white;   
     }
 
     main {
@@ -132,7 +132,8 @@ input.button:hover {
         align-items: center;
         justify-content: center;
         padding: 0;
-        width: 100%;
+        width: 100vw;
+        height: auto;
 
     }
 
