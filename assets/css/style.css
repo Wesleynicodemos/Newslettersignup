@@ -172,7 +172,8 @@ input.button:hover {
         }
 
         .form {
-            width: 80%;
+            width: 90%;
+            margin: auto;
         }
         
     }
@@ -203,7 +204,7 @@ input.button:hover {
     }
 
     .form input {
-        width: 90vw;
+        width: 90%;
         height: 50px;
         
     }
