@@ -24,7 +24,7 @@ input.addEventListener('click', (e)=>{
         paragrafo.style.display = 'none'
         email2.style.borderColor = '#AEAEAE'
         email2.style.background = 'white' 
-        window.location.assign("/confirmation.html")  
+        window.location.assign("./confirmation.html")  
     } else {
         
         email2.style.borderColor = "red"
